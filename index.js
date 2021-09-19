@@ -87,3 +87,15 @@ search.addEventListener("input", function () {
     }
   });
 });
+
+
+
+
+document.querySelector("body").addEventListener("mousemove",function(e){
+document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY},${e.offsetX+e.offsetY})`
+// console.log(e.offsetX,e.offsetY);
+})
+
+setTimeout(
+  document.querySelector("body").addEventListener("mousemove",function(e){
+  document.body.style.backgroundColor=`rgb(${e.offsetX},${e.offsetY},${e.offsetX+e.offsetY})`},100));
